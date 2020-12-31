@@ -1,0 +1,186 @@
+html,body{
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	font-family: Georgia, serif;
+	transition:all .5s;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+.color{
+	background: #d0f1f5;
+	color:black;
+}
+
+
+/*dark mode--------------------------------------*/
+
+/*======================================= HEADER*/
+
+#header{
+	position:fixed;
+	z-index:100;
+	top:0;
+	background-color:#6ee0fa;
+}
+
+/*--------logo*/
+.logo img{
+	padding-top:12px;
+	padding-left:20px;
+	padding-bottom:12px;
+	width:250px;
+	height:120px;
+}
+
+.logo{
+	float:left;
+}
+
+/*-------list_item*/
+#nav{
+	padding:0px 30px;
+	width:100%;
+	margin:0px auto;
+}
+
+#nav a{
+	color:black;
+	border-radius:8px;
+}
+
+#navbar li{
+	text-align: center;
+}
+
+#nav a:hover{
+	background-color: rgba(255,255,255,0.7);
+	border-radius:8px;
+}
+
+#nav li{
+	padding:5px;
+	width:100%;
+}
+
+#active{
+	background-color: rgba(255,255,255,0.7);
+	border-radius:8px;
+}
+
+/*--------------------------switcher to dark theme*/
+#icon_switcher{
+	font-size: 30px;
+	right:100px;
+	top:9px;
+	position: absolute;
+}
+
+.switcher{
+	margin-top: 113px;
+	margin-bottom: 10px;
+	position: relative;
+	height: 50px;
+	padding:5px;
+}
+
+
+.box{
+	right:10px;
+	width:80px;
+	height:40px;
+	border:4px solid #252525;
+	border-radius: 50px;
+	position: relative;
+	float:right;
+}
+
+#input{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	cursor:pointer;
+	outline: none;
+	-webkit-appearance:none;
+	z-index:1;
+}
+
+.circle{
+	position: absolute;
+	top:2px;
+	left:2px;
+	width:48%;
+	height: 28px;
+	background: rgb(48,48,48);
+	border-radius: 50px;
+	z-index:0;
+	transition: all .5s;
+}
+
+.circle::before{
+	content: '';
+	position: absolute;
+	width:10px;
+	height: 10px;
+	background:rgb(85,85,85);
+	border-radius: 50px;
+	transition: all .5s;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+#input:checked ~ .circle{
+	transform:translateX(100%);
+}
+
+#input:checked ~ .circle::before{
+	
+	background: #ffff00;
+	box-shadow: 0 0 50px 3px #ffff00;
+}
+
+/*-------------------------------------------content*/
+.body_content{
+	margin-top: 120px;
+}
+
+/*----------------------------------FOOTER*/
+.footer{
+	margin-top:20px;
+	text-align:center;
+	background-color:#6ee0fa;
+	height: 120px;
+	width:100%;
+	padding: 35px;
+}
+
+.socmed{
+	text-align:center;
+	
+}
+
+#socmed{
+	background:black;
+	color:white;
+	padding:8px;
+	width:40px;
+	border-radius:10px;
+	font-size:20px;
+	text-align: center;
+}
+
+#socmed:hover{
+	color:black;
+	background-color:white;
+}
+
+.copyright p{
+	font-size: 12px;
+	padding-top:5px;
+}
+

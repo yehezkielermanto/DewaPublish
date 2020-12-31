@@ -1,0 +1,569 @@
+html,body{
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	font-family: Georgia, serif;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+.color{
+	background: #d0f1f5;
+	color:black;
+}
+
+/*======================================= HEADER*/
+.header{
+	background-color:#6ee0fa;
+
+	width:100%;
+	position:fixed;
+	z-index:100;
+}
+
+#header{
+	position:fixed;
+	z-index:100;
+	top:0;
+	background-color:#6ee0fa;
+}
+
+/*--------logo*/
+.logo img{
+	padding-top:12px;
+	padding-left:20px;
+	padding-bottom:12px;
+	width:250px;
+	height:120px;
+}
+
+.logo{
+	float:left;
+}
+
+/*-------list_item*/
+#nav{
+	padding:0px 30px;
+	width:100%;
+	margin:0px auto;
+}
+
+#nav a{
+	color:black;
+	border-radius:8px;
+}
+
+#navbar li{
+	width:150px;
+	text-align: center;
+}
+
+#nav a:hover{
+	background-color: rgba(255,255,255,0.7);
+	border-radius:8px;
+}
+
+#nav li{
+	padding:5px;
+	width:100%;
+}
+
+#navbarDropdown{
+	background-color: rgba(255,255,255,0.7);
+	border-radius:8px;
+}
+
+
+/*-------------------------------------------content*/
+.body_content{
+	margin-top: 120px;
+}
+
+.title_content{
+	text-align: center;
+	background-color:#21cbde;
+	padding:10px 10px;
+	text-align:center;
+	width:100%;
+	color:white;
+	font-weight: bold;
+	cursor:default;
+}
+
+/*-------------------------------notes*/
+.note{
+	box-shadow: 0 0 45px rgba(0,0,0,0.2);
+	max-width: 900px;
+	margin:10px auto 0px auto;
+	background-color: white;
+	border-radius: 10px;
+	padding:10px;
+}
+
+
+/*--------------------------------------FORM kirim naskah*/
+.form_container{	
+	max-width: 900px;
+	margin:0px auto;
+	padding:35px 75px;
+	background-color: white;
+	box-shadow: 0 0 45px rgba(0,0,0,0.2);
+	border-radius:15px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.input{
+	padding-bottom: 6px;
+	clear:both;
+	display: table;
+	width:100%;
+}
+
+.input_2{
+	padding-bottom: 6px;
+	clear:both;
+	display: table;
+	width:100%;
+}
+
+.input input{
+	width:100%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding-right:10px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+#margin{
+	margin-top: 15px;
+}
+
+#gender{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#Check{
+	padding-right: 10px;
+}
+
+#job_1{
+	padding-left: 25px;
+	margin-right:5px;
+}
+
+#title_book{
+	margin-top: 15px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=button] {
+  background-color: #41aed9;
+  color: white;
+  margin:10px 0;
+  padding: 12px 20px;
+  border:none;
+  float: right;
+  text-align: center;
+  width:200px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px #999;
+}
+
+.button_1:hover {
+  background-color:#419cd9;
+}
+
+.button_active:active{
+	background-color: #419cd9;
+	box-shadow: 0 4px #666;
+	transform: translateY(4px);
+}
+
+@media screen and (max-width: 800px) {
+	.col-75{
+	    width: 100%;
+	    margin-top:0;
+	}
+	.col-25,input[type=button]{
+	    width: 100%;
+		margin-top:12px;
+	}	
+	.form_container{
+		margin: 0px 10px 10px 10px;
+		padding:15px;
+	}
+	.note{
+		margin: 0px 10px 10px 10px;
+	}
+
+}
+
+/*required name------------------------------*/
+.col_1{
+	border:1px solid gray;
+	padding:7px;
+	border-radius:3px;
+}
+
+.col_1:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(51,181,229,.45);
+}
+
+.input_name{
+	position: relative;
+}
+
+.message_error_1{
+	position: absolute;
+	top:-8px;
+	right:28px;
+	font-size:14px;
+	background-color: white;
+
+}
+
+.warning {
+	color:red;
+}
+.ok {
+	color:green;
+}
+
+/*required phone-----------------------------*/
+.col_2{
+	border:1px solid gray;
+	padding:7px;
+	border-radius:3px;
+}
+
+.col_2:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(51,181,229,.45);
+}
+.input_phone{
+	position: relative;
+}
+
+.message_error_2{
+	position: absolute;
+	top:-8px;
+	right:28px;
+	font-size:14px;
+	background-color: white;
+
+}
+
+.coba{
+	position: absolute;
+	right:9px;
+	top:8px;
+}
+
+/*required email---------------------------*/
+.col_3{
+	border:1px solid gray;
+	padding:7px;
+	border-radius:3px;
+}
+
+.col_3:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(51,181,229,.45);
+}
+
+.input_email{
+	position: relative;
+}
+
+.message_error_3{
+	position: absolute;
+	top:-8px;
+	right:28px;
+	font-size:14px;
+	background-color: white;
+
+}
+
+/*required age(umur)-------------------------*/
+.col_4{
+	border:1px solid gray;
+	padding:7px;
+	border-radius:3px;
+}
+
+.col_4:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(51,181,229,.45);
+}
+
+.input_age{
+	position: relative;
+}
+
+.message_error_4{
+	position: absolute;
+	top:-8px;
+	right:28px;
+	font-size:14px;
+	background-color: white;
+
+}
+/*required jobs-----------------------------*/
+.border_jobs{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	padding: 6px 5px;
+}
+
+.message_error_5{
+	position:absolute;
+	top:-14px;
+	right:28px;
+	font-size: 14px;
+	background-color:white;
+}
+
+/*required title----------------------------*/
+.col_6{
+	border:1px solid gray;
+	padding:7px;
+	border-radius:3px;
+}
+
+.col_6:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(51,181,229,.45);
+}
+
+.input_title{
+	position: relative;
+}
+
+.message_error_6{
+	position: absolute;
+	top:-8px;
+	right:28px;
+	font-size:14px;
+	background-color: white;
+
+}
+
+/*required input file----------------------------*/
+.col_7{
+	
+	padding:7px;
+	border-radius:3px;
+}
+
+.col_7:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(51,181,229,.45);
+}
+
+.input_upload{
+	position: relative;
+}
+
+.message_error_7{
+	position: absolute;
+	top:-8px;
+	right:28px;
+	font-size:14px;
+	background-color: white;
+
+}
+
+/*custom button upload----------------------*/
+#custom_button {
+  padding: 10px;
+  color: white;
+  background-color: #3c9ac2;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom_button:hover {
+  background-color: #29becc;
+}
+
+#custom_text {
+  margin-left: 10px;
+  font-family: sans-serif;
+}
+
+
+/*gender required----------------------------------*/
+.border_gender{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	padding: 6px 5px;
+}
+
+.message_error_8{
+	position:absolute;
+	top:-14px;
+	right:28px;
+	font-size: 14px;
+	background-color:white;
+}
+
+/*style popup----------------------------------*/
+/* The Modal (background) */
+.modal_pop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 200; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.modal-content_1 {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border: none;
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius:20px;
+  text-align: center;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.modal-header_1 {
+  padding: 4px 16px;
+  color: white;
+  position: relative;
+  border-radius:20px;
+  border:none;
+  width:100%;
+}
+
+#confirm{
+	background-color: white;
+	color:#5cb85c;
+	font-size: 55px;
+}
+
+.modal-body_1 {
+	padding: 2px 16px;
+}
+
+/*konfirmasi----------------------------*/
+.confirm{
+	background-color:#41aed9;
+	color:white;
+	padding:5px;
+	text-align: center;
+	cursor: pointer;
+	border:none;
+	border-radius:8px;
+	width:100px;
+}
+
+@media screen and (max-width: 800px) {
+	.modal-content_1{
+		width:80%;
+	}
+
+}
+
+
+
+
+/*----------------------------------FOOTER*/
+.footer{
+	text-align:center;
+	background-color:#6ee0fa;
+	height: 120px;
+	width:100%;
+	padding: 35px;
+}
+
+.socmed{
+	text-align:center;
+	
+}
+
+#socmed{
+	background:black;
+	color:white;
+	padding:8px;
+	width:40px;
+	border-radius:10px;
+	font-size:20px;
+	text-align: center;
+}
+
+#socmed:hover{
+	color:black;
+	background-color:white;
+}
+
+.copyright p{
+	font-size: 12px;
+	padding-top:5px;
+}
+
