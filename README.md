@@ -1,2 +1,2 @@
 # DewaPublish
-This is my web design first project
+This is my first project in web design 
